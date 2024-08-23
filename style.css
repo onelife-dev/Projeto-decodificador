@@ -1,0 +1,106 @@
+:root {
+    --cor-primaria: white;
+    --cor-secundaria: #0A3871;
+
+    --fonte-primaria: 'Open sans', sans-serif;
+    --fonte-secundaria: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 1;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+}
+
+.container {
+    margin: 0% 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open sans', sans-serif;
+    font-size: medium;
+    width: 50%;
+}
+
+.imagem_person {
+    width: 400px;
+    height: 400px;
+}
+
+.texto {
+    width: 50%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: var(--cor-primaria);
+    resize: none;
+}
+
+.texto::placeholder {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 20px;
+    font-weight: 150px;
+}
+
+.aviso {
+    color: gray;
+    font-family: var(--fonte-secundaria);
+    margin: 1% 0%;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.botao_copiar {
+    background-color: #D8DFE8;
+    border: 1px solid;
+    color: var(--cor-secundaria);
+    border-radius: 24px;
+    height: 67px;
+    width: 330px;
+    font-family: 'Open sans', sans-serif;
+    font-size: large;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.botao_criptografia {
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-secundaria);
+    color: white;
+    border-radius: 24px;
+    height: 67px;
+    width: 330px;
+    font-family: 'Open sans', sans-serif;
+    font-size: large;
+    cursor: pointer;
+}
+
+.botao_descriptografia {
+    background-color: #D8DFE8;
+    border: 1px solid;
+    color: var(--cor-secundaria);
+    border-radius: 24px;
+    height: 67px;
+    width: 330px;
+    font-family: 'Open sans', sans-serif;
+    font-size: large;
+    cursor: pointer;
+    margin-left: 30px;
+}
